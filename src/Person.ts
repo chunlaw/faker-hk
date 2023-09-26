@@ -41,7 +41,7 @@ export class Person {
     this.birth = new Date(gaussianRandom(seed ?? random(), 45, 15) * -1 * 365 * 24 * 60 * 60 * 1000 + 45 * 365 * 24 * 60 * 60 * 1000)
     // @ts-ignore
     this.phone = ['5', '6', '9'].at((seed ?? random()) % 3) + ((seed ?? random()) + 9999999) % 10000000
-    const _street = {...street[(seed ?? random())%street.length], no: Math.floor((seed ?? random()) / 20000) % 50 }
+    const _street = {...street[(seed ?? random())%street.length], no: Math.floor((seed ?? random()) / 20000) % 50 + 1 }
     // @ts-ignore
     this.address = _street.no + " " + _street.en + ", " + dc[_street.dc].en.toUpperCase()
     // @ts-ignore
