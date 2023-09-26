@@ -1,6 +1,6 @@
 {
   "name": "faker-hk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generating fake profile of typical ethnic Chinese in Hong Kong",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -28,9 +28,12 @@
   "scripts": {
     "clean": "rimraf dist",
     "test": "jest",
+    "prebuild": "yarn clean && yarn test",
     "build:esm": "tsc --target es2018 --outDir esm",
     "build:cjs": "tsc --target es2015 --module commonjs --outDir dist",
-    "build": "yarn build:cjs && yarn build:esm"
+    "build": "yarn build:cjs && yarn build:esm",
+    "prepublish": "yarn build",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",
