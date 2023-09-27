@@ -17,6 +17,7 @@ import {
   ContentCopy,
   Close as CloseIcon,
   CopyAll,
+  Refresh,
 } from "@mui/icons-material";
 
 const Doc = () => {
@@ -47,13 +48,13 @@ const Doc = () => {
       <Table size="small">
         <TableBody>
           <TableRow>
-            <TableCell>
+            <TableCell sx={{width: "20%"}}>
               <Typography variant="body2">Sex:&emsp;</Typography>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{width: "70%"}}>
               <Typography variant="body1" fontWeight="bold">{person.sex.toUpperCase()}</Typography>
             </TableCell>
-            <TableCell>
+            <TableCell sx={{width: "10%"}}>
               <IconButton 
               onClick={() => handleCopy(person.sex.toUpperCase())} size="small"
               >
@@ -174,6 +175,12 @@ const Doc = () => {
           onClick={() => handleCopy(JSON.stringify(person, null, 2))}
         >
           <CopyAll />
+        </IconButton>
+        <IconButton 
+          size="small" 
+          onClick={() => setState(prev => prev + 1)}
+        >
+          <Refresh />
         </IconButton>
       </Box>
       <Snackbar

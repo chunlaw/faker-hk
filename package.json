@@ -17,7 +17,7 @@
     "@mui/icons-material": "^5.14.6",
     "@mui/material": "^5.14.6",
     "date-fns": "^2.30.0",
-    "faker-hk": "^1.0.1",
+    "faker-hk": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-json-view-lite": "^0.9.8",

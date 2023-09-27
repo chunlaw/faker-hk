@@ -6,7 +6,7 @@ import {
   Theme,
   Typography,
 } from "@mui/material";
-import { GitHub as GitHubIcon, Info as InfoIcon } from "@mui/icons-material";
+import { GitHub as GitHubIcon } from "@mui/icons-material";
 import npmLogo from "../assets/npm.svg";
 import { useNavigate } from "react-router-dom";
 
