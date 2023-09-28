@@ -5,6 +5,16 @@ import { getRoman } from "cantonese-romanisation"
 import random, { gaussianRandom } from "./utils"
 import { randomHkid } from "./hkid"
 
+interface FakeHKerOptions {
+  seed?: number;
+  avgBirthTs?: number;
+  ageStd?: number;
+}
+
+const getFirstUpperCase = (v: string): string => {
+  return v.replace(/^./, v[0].toUpperCase())
+}
+
 export default class FakeHKer {
   firstname: string
   surname: string
@@ -18,8 +28,7 @@ export default class FakeHKer {
   address: string;
   chnAddress: string;
 
-  constructor(seed?: number) {
-    
+  constructor({seed, avgBirthTs = 376099200000, ageStd = 15}: FakeHKerOptions) {
     this.sex = (seed ?? random()) % 1865 < 865 ? 'm' : 'f'
     // @ts-ignore
     this.chnFirstname = names[this.sex][(seed ?? random()) % names[this.sex].length]
@@ -35,10 +44,10 @@ export default class FakeHKer {
       return surnames[surnames.length-1].value
     })(seed ?? random())
     
-    this.firstname = getRoman(this.chnFirstname).map(v => v[0].replace(/^./, v[0][0].toUpperCase())).join(" ")
-    this.surname = getRoman(this.chnSurname).map(v => v[0].replace(/^./, v[0][0].toUpperCase())).join(" ")
+    this.firstname = getRoman(this.chnFirstname).map(v => getFirstUpperCase(v[(seed ?? random()) % v.length])).join(" ")
+    this.surname = getRoman(this.chnSurname).map(v => getFirstUpperCase(v[(seed ?? random()) % v.length])).join(" ")
     this.avatar = `https://avatars.githubusercontent.com/u/${(seed ?? random()) * 9999999 % 146095000}`
-    this.birth = new Date(gaussianRandom(seed ?? random(), 45, 15) * -1 * 365 * 24 * 60 * 60 * 1000 + 53 * 365 * 24 * 60 * 60 * 1000)
+    this.birth = new Date(gaussianRandom(seed ?? random(), avgBirthTs, ageStd * 365.25 * 24 * 60 * 60 * 1000))
     // @ts-ignore
     this.phone = ['5', '6', '9'].at((seed ?? random()) % 3) + ((seed ?? random()) + 9999999) % 10000000
     const _street = {...street[(seed ?? random())%street.length], no: Math.floor((seed ?? random()) / 20000) % 50 + 1 }

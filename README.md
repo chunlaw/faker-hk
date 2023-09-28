@@ -1,7 +1,7 @@
 Faker HK
 =========
 
-Faker HK is a tool to generate fake Hongkongers' profile in ethnic Chinese. The package draws over 400k naming combinations with proper Cantonese Romanisation. The package is based on [Cantonese Romanisation](https://github.com/chunlaw/cantonese-romanisation) and [hkid](https://github.com/tsekityam/hkid). 
+Faker HK is a tool to generate fake Hongkongers' profile in ethnic Chinese. The package draws over 2 million naming combinations with proper Cantonese Romanisation. The package is based on [Cantonese Romanisation](https://github.com/chunlaw/cantonese-romanisation) and [hkid](https://github.com/tsekityam/hkid). 
 
 Demo is available [here](https://faker-hk.chunlaw.io/).
 
