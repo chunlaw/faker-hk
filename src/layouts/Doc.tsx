@@ -11,14 +11,14 @@ import {
 import { JsonView, darkStyles } from "react-json-view-lite";
 import "react-json-view-lite/dist/index.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import Person from "faker-hk";
+import FakeHKer from "faker-hk";
 import { useMemo, useState } from "react";
 
 const Doc = () => {
   const [state, setState] = useState<number | null>(null);
 
   const person = useMemo(() => {
-    const person = new Person(state === null ? undefined : state)
+    const person = new FakeHKer({seed: state === null ? undefined : state})
     return JSON.parse(JSON.stringify(person))
   }, [state])
 
@@ -121,6 +121,6 @@ const accordionSummarySx: SxProps<Theme> = {
 
 const getPersonCode = (
   input: number | null,
-) => `import Person from "faker-hk";
+) => `import FakeHKer from "faker-hk";
 
-console.log( new Person(${input === null ? "" : input }) );`;
+console.log( new FakeHKer({seed: ${input === null ? "" : input }}) );`;
