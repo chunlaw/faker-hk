@@ -5,3 +5,4 @@ export default FakeHker
 export * from "./hkid"
 export * from "./utils"
 
+export type { FakeHKerOption } from "./FakeHKer"

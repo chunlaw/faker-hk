@@ -5,7 +5,7 @@ import { getRoman } from "cantonese-romanisation"
 import random, { gaussianRandom } from "./utils"
 import { randomHkid } from "./hkid"
 
-interface FakeHKerOptions {
+export interface FakeHKerOption {
   seed?: number;
   avgBirthTs?: number;
   ageStd?: number;
@@ -28,7 +28,7 @@ export default class FakeHKer {
   address: string;
   chnAddress: string;
 
-  constructor({seed, avgBirthTs = 376099200000, ageStd = 15}: FakeHKerOptions) {
+  constructor({seed, avgBirthTs = 376099200000, ageStd = 15}: FakeHKerOption) {
     this.sex = (seed ?? random()) % 1865 < 865 ? 'm' : 'f'
     // @ts-ignore
     this.chnFirstname = names[this.sex][(seed ?? random()) % names[this.sex].length]
