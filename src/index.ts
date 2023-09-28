@@ -1,7 +1,7 @@
-import { Person } from "./Person"
+import FakeHker from "./FakeHKer"
 import { randomHkid as _randomHkid } from "./hkid"
 
-export default Person
+export default FakeHker
 export * from "./hkid"
 export * from "./utils"
 
