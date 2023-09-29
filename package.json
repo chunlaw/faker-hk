@@ -1,7 +1,7 @@
 {
   "name": "faker-hk-demo",
   "private": true,
-  "version": "1.0.4",
+  "version": "1.0.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,10 +17,10 @@
     "@mui/icons-material": "^5.14.6",
     "@mui/material": "^5.14.6",
     "date-fns": "^2.30.0",
-    "faker-hk": "^1.0.3",
+    "faker-hk": "^1.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-json-view-lite": "^0.9.8",
+    "react-json-view": "^1.21.3",
     "react-router-dom": "^6.15.0",
     "react-syntax-highlighter": "^15.5.0"
   },

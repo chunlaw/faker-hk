@@ -33,10 +33,7 @@ const Header = () => {
         </Button>
         <IconButton
           onClick={() => {
-            window.open(
-              "https://github.com/chunlaw/faker-hk",
-              "_blank",
-            );
+            window.open("https://github.com/chunlaw/faker-hk", "_blank");
           }}
           size="small"
         >
@@ -44,10 +41,7 @@ const Header = () => {
         </IconButton>
         <IconButton
           onClick={() => {
-            window.open(
-              "https://www.npmjs.com/package/faker-hk",
-              "_blank",
-            );
+            window.open("https://www.npmjs.com/package/faker-hk", "_blank");
           }}
           size="small"
         >
