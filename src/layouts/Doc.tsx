@@ -177,7 +177,7 @@ const Doc = () => {
               <TableBody>
                 <TableRow>
                   <TableCell>seeds</TableCell>
-                  <TableCell>string | string[]</TableCell>
+                  <TableCell>number | number[]</TableCell>
                   <TableCell>
                     Random number for generating the profile (Optional){" "}
                   </TableCell>
