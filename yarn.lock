@@ -909,10 +909,10 @@ caniuse-lite@^1.0.30001538:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001539.tgz#325a387ab1ed236df2c12dc6cd43a4fff9903a44"
   integrity sha512-hfS5tE8bnNiNvEOEkm8HElUHroYwlqMMENEzELymy77+tJ6m+gA2krtHl5hxJaj71OlpC2cHZbdSMX1/YEqEkA==
 
-cantonese-romanisation@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.6.tgz#cdd9dfef6cdcf802c6d613d32979aba46393e305"
-  integrity sha512-1WoRVY5wEsokjrwU7O2LiUDbii4nwxUCnbdJvgeEbMoUOx2W+YTV5XkpypQ22Wj/U4iqagtcpPVmks1n0ddrqg==
+cantonese-romanisation@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.7.tgz#ac24fdc11692a25a7bee387314edbe40a474bd3e"
+  integrity sha512-1uh6HuI1ILR983S3+OBdZeQEkvbCFdfcbHOYyykU39QkP2Qh6A/d2xX428HkLMUPk06VKbB+NfCR0C6rzAa2Xw==
 
 chalk@^2.4.2:
   version "2.4.2"
