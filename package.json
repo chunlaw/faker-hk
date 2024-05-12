@@ -1,6 +1,6 @@
 {
   "name": "faker-hk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Generating fake profile of typical ethnic Chinese in Hong Kong",
   "main": "dist/index.js",
   "module": "esm/index.js",
