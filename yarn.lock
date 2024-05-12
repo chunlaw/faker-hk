@@ -847,10 +847,10 @@ callsites@^3.0.0:
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-cantonese-romanisation@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.6.tgz#cdd9dfef6cdcf802c6d613d32979aba46393e305"
-  integrity sha512-1WoRVY5wEsokjrwU7O2LiUDbii4nwxUCnbdJvgeEbMoUOx2W+YTV5XkpypQ22Wj/U4iqagtcpPVmks1n0ddrqg==
+cantonese-romanisation@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.7.tgz#ac24fdc11692a25a7bee387314edbe40a474bd3e"
+  integrity sha512-1uh6HuI1ILR983S3+OBdZeQEkvbCFdfcbHOYyykU39QkP2Qh6A/d2xX428HkLMUPk06VKbB+NfCR0C6rzAa2Xw==
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -1160,12 +1160,12 @@ esutils@^2.0.2:
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.3.tgz#74d2eb4de0b8da1293711910d50775b9b710ef64"
   integrity sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
 
-faker-hk@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/faker-hk/-/faker-hk-1.0.6.tgz#ad2c80548996b9d06117cfac51b48a167978d3d4"
-  integrity sha512-Cy2irSa1Jsrajl/xvw1Gb50mpUqMJ86fLcg1OnC8qIfGwNnhMzZEHx0zO761VC0gefMG2JCmpB0m3ofd21DC1g==
+faker-hk@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/faker-hk/-/faker-hk-1.0.9.tgz#dcb3186f7dc05db91654de550a160b8b8d59c082"
+  integrity sha512-qkUSaxz7uKfpVNRl5u7wynqFebhUxSmrMPqhyz3+aVB5s+Fsic39PEArwvBBDhErZP4NbZc8pX27i7/2LJpofg==
   dependencies:
-    cantonese-romanisation "^1.0.6"
+    cantonese-romanisation "^1.0.7"
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
