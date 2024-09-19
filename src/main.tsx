@@ -5,7 +5,7 @@ import "./index.css";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { BrowserRouter } from "react-router-dom";
 import { LocalizationProvider } from "@mui/x-date-pickers";
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
 
 const theme = createTheme({
   palette: {
