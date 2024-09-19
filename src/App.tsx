@@ -2,8 +2,9 @@ import "./App.css";
 import { Container, SxProps, Theme } from "@mui/material";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
-import Home from "./layouts/Home";
-import Doc from "./layouts/Doc";
+import HomePage from "./pages/HomePage";
+import DocPage from "./pages/DocPage";
+import CsvPage from "./pages/CsvPage";
 import { Outlet, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
           </Container>
         }
       >
-        <Route path="/" element={<Home />} />
-        <Route path="/doc" element={<Doc />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/csv" element={<CsvPage />} />
+        <Route path="/doc" element={<DocPage />} />
       </Route>
     </Routes>
   );

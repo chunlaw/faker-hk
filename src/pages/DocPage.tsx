@@ -22,7 +22,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import FakeHKer, { type FakeHKerOption } from "faker-hk";
 import { useMemo, useState } from "react";
 
-const Doc = () => {
+const DocPage = () => {
   const [state, setState] = useState<FakeHKerOption>({});
 
   const person = useMemo(() => {
@@ -207,7 +207,7 @@ const Doc = () => {
   );
 };
 
-export default Doc;
+export default DocPage;
 
 const rootSx: SxProps<Theme> = {
   display: "flex",

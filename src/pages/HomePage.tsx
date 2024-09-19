@@ -20,7 +20,7 @@ import {
   Refresh,
 } from "@mui/icons-material";
 
-const Doc = () => {
+const HomePage = () => {
   const [state, setState] = useState<number>(0);
   const [open, setOpen] = useState<boolean>(false);
 
@@ -232,7 +232,7 @@ const Doc = () => {
   );
 };
 
-export default Doc;
+export default HomePage;
 
 const rootSx: SxProps<Theme> = {
   display: "flex",

@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
 
+
   return (
     <Box sx={rootSx}>
       <Typography
@@ -23,6 +24,14 @@ const Header = () => {
         Faker HK
       </Typography>
       <Box>
+        <Button
+          variant="text"
+          sx={{ textTransform: "none" }}
+          onClick={() => navigate("/csv")}
+          color="inherit"
+        >
+          <Typography variant="body1">Batch Generate</Typography>
+        </Button>
         <Button
           variant="text"
           sx={{ textTransform: "none" }}
